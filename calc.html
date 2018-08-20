@@ -9,14 +9,17 @@
         function calculate(){
            fval = document.getElementById("first").value;
            sval = document.getElementById("second").value;
-           sum = parseInt(fval) + parseInt(sval);     
+           tval = document.getElementById("third").value;
+           sum = parseInt(fval) + parseInt(sval) + parseInt(tval);     
            alert("Sum = " + sum);
+
         }
     </script>
 </head>
 <body>
     <label>First:</label><input type="text" id="first"></input>
     <label>Second:</label><input type="text" id="second"></input>
+    <label>third:</label><input type="text" id="third"></input>
     </br>
     <button onclick="calculate()">sum</button>
 </body>
